@@ -145,9 +145,9 @@ def main():
 
     # capture or load in the biscuit image
     if(METHOD == 'CAMERA' and TEST == False):
-        filename = "test.jpg"
+        filename = "pics/test.jpg"
     else:
-        filename = "testbiccies.jpg"
+        filename = "pics/testbiccies.jpg"
     (img, gray, baw) = capture_load_image(camera,filename)
 
     # find the biscuit locations
@@ -169,9 +169,9 @@ def main():
 
         # take next picture
         if(METHOD == 'CAMERA' and TEST == False):
-            filename = "test.jpg"
+            filename = "pics/test.jpg"
         else:
-            filename = f"test{i}.jpg"
+            filename = f"pics/test{i}.jpg"
         img, gray, baw = capture_load_image(camera, filename)
 
         # see if we can find charlie, if so add his coords to secret
